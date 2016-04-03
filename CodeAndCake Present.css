@@ -1,54 +1,115 @@
-@import url(_common.css);
+/* Styles for both Print and Present */
 
-body 
-{
-	padding: 2.5em 2em;
-	font-size: 2.5em;
-}	
+/* Normalize https://necolas.github.io/normalize.css */
+	@import url(normalize.css);
 
-p 
-{ 
-	margin-bottom: 1em;
-}
+/* FONTS from Google Fonts */
+	@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:300,600);
+	@import url(https://fonts.googleapis.com/css?family=Lekton:400,400italic,700);
 
-h1,h2,h3,h4,h5 
-{
-	margin-top:4em;
-	margin-bottom:1em;
-	line-height:1.2;
-}	
+/* TYPOGRAPHY */
 
-h1, h2
-{
-	border-bottom: none;	
-} 
+	html
+	{
+	  font-size: 18px;
+	}
 
-h3, h4, h5 
-{
-	font-weight:normal;
-}
+	body 
+	{
+	  font-family: 'Lekton', sans-serif;
+	  line-height: 1.5;
+	  color: rgb(68, 68, 68);
+	}
 
-h1 
-{
-	font-size:6em;
-}
+	b
+	{
+	  color: rgb(34, 34, 34);
+	}
 
-h2 
-{
-	font-size:5em;
-}
+	body 
+	{
+		padding: 2.5em 2em;
+		font-size: 2.5em;
+	}	
 
-h3 
-{
-	font-size:4em;
-}
+	p 
+	{ 
+		margin-bottom: 1em;
+	}
 
-h4 
-{
-	font-size:3em;
-}
+	h1,h2,h3,h4,h5 
+	{
+		margin-top:4em;
+		margin-bottom:1em;
+		line-height:1.2;
+	}	
 
-h5 
-{
-	font-size:2em;
-}
+	h1, h2
+	{
+		border-bottom: none;	
+	} 
+
+	h3, h4, h5 
+	{
+		font-weight:normal;
+	}
+
+	h1 
+	{
+		font-size:6em;
+	}
+
+	h2 
+	{
+		font-size:5em;
+	}
+
+	h3 
+	{
+		font-size:4em;
+	}
+
+	h4 
+	{
+		font-size:3em;
+	}
+
+	h5 
+	{
+		font-size:2em;
+	}
+
+/* CODE */
+
+	/* Prism http://prismjs.com/ */
+	@import url(prism.css);
+
+	pre, code
+	{
+		word-break: break-word;
+	}
+
+	kbd, code 
+	{
+	  font-family: 'Source Code Pro', monospace  !important;
+	  font-size: 83%;
+	  font-weight: 300;
+	  display: inline-block;
+	  padding: .1rem .5rem .2rem  !important;
+	  vertical-align: middle;
+	  border-radius: .3rem;
+	}
+
+	kbd 
+	{
+	  color: rgb(85, 85, 85);
+	  background-color: rgb(252, 252, 252);
+	  border: solid 1px rgb(204, 204, 204);
+	  border-bottom-color: rgb(187, 187, 187);
+	  box-shadow: inset 0 -1px 0 rgb(187, 187, 187);
+	}
+
+	code[class*="language-"] 
+	{
+	  color: rgb(102, 217, 239);
+	}
