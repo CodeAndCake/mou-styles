@@ -19,3 +19,7 @@
 * Change the selected stylesheet from the dropdown. If the stylesheet you're after doesn't appear, you may have to click `Reload`
 
 ![](images/mou-preferences.png)	
+
+### Editing CSS
+
+When you make changes to any of the `.css` files, they won't be immediately picked up by Mou. You will have to open `Mou`> `Preferences...` > `CSS` and then click `Reload` to have the latest version of your selected stylesheet to be re-applied. If that doesn't work, try and choose another stylesheet from the dropdown, then switch back to your favourite one.
